@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ 
+    <title>Document</title>
+<style>
+    .flip {
+        width: 240px;
+        height: 200px;
+        margin: 10px;
+        float: left;
+    }
+
+    .flip>.front {
+        position: absolute;
+        transform: perspective(600px) rotateY(0deg);
+        background: #FC0;
+        width: 240px;
+        height: 200px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+    }
+
+    .flip>.back {
+        position: absolute;
+        transform: perspective(600px) rotateY(180deg);
+        background: #80BFFF;
+        width: 240px;
+        height: 200px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+    }
+
+    .flip:hover>.front {
+        transform: perspective(600px) rotateY(-180deg);
+
+    }
+
+    .flip:hover>.back {
+        transform: perspective(600px) rotateY(0deg);
+    }
+</style>
+</head>
+
+    <div class="flip">
+        <div class="front">
+            <h2>frentere sas</h2>
+        </div>
+        <div class="back">
+            <h2>Paris</h2>
+            <p>What an amazing city</p>
+        </div>
+    </div>
+
+<div class="flip">
+        <div class="front">
+           <h2>sasasasasfrrnte</h2>
+        </div>
+        <div class="back">
+            <h2>Paris</h2>
+            <p>What an amazing city</p>
+        </div>
+</div>
+<body>
+<nav class="menu">
+    <div class="menu-left">
+        <button class="menu-left-btn js-menu-side-show">Abrir Menu</button>
+        <a href="https://www.fiap.com.br" class="menu-left-logo">
+    </div>
+    <div class="menu-main">
+        <ul class="menu-main-list">
+            <li class="menu-main-item menu-main-item-dropdown js-menu-sub-show">
+                <a href="https://www.fiap.com.br/institucional/" class="menu-main-link" onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'Institucional');">FIAP</a>
+                <div class="menu-sub js-menu-sub" style="visibility: hidden; opacity: 0;">
+                    <ul class="menu-sub-list">
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/institucional/#a-fiap" class="menu-sub-list-link" onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'A FIAP');">A
+                                FIAP</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/institucional/#disrupcao" class="menu-sub-list-link"
+                                onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'Disrupção');">Disrupção</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/institucional/#fotos" class="menu-sub-list-link" onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'Fotos');">Fotos</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/institucional/#videos" class="menu-sub-list-link" onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'Vídeos');">Vídeos</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/institucional/#premios-e-reconhecimentos" class="menu-sub-list-link"
+                                onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'Prêmios e Reconhecimentos');">Prêmios
+                                e Reconhecimentos</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/iniciativas/" class="menu-sub-list-link" onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'Iniciativas');">Iniciativas</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/institucional/#parcerias-estrategicas" class="menu-sub-list-link"
+                                onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'Parcerias Estratégicas');">Parcerias
+                                Estratégicas</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/institucional/#hub" class="menu-sub-list-link" onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'HUB FIAP');">HUB
+                                FIAP</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/institucional/#unidades" class="menu-sub-list-link"
+                                onclick="ga('send', 'event', 'Institucional', 'Clique Item Menu', 'Unidades');">Unidades</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-main-item js-menu-sub-show">
+                <a href="https://www.fiap.com.br/graduacao/" class="menu-main-link">Graduação</a>
+                <div class="menu-sub js-menu-sub" style="visibility: hidden; opacity: 0;">
+                    <div class="menu-sub-columns">
+                        <a href="https://www.fiap.com.br/graduacao/" class="menu-sub-column menu-sub-header">
+                            <div class="menu-sub-column">
+                                <ul class="menu-sub-box menu-sub-box-4">
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/producao-multimidia/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/marketing-digital-data-science/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/defesa-cibernetica/" class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/producao-multimidia/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/marketing-digital-data-science/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/defesa-cibernetica/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/jogos-digitais/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/gestao-da-tecnologia-da-informacao/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/bacharelado/sistemas-de-informacao/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/bacharelado/engenharia-de-computacao/"
+                                            class="menu-sub-box-link">Engenharia de Computação</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/bacharelado/engenharia-de-producao/"
+                                            class="menu-sub-box-link">Engenharia de Produção</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/jogos-digitais/" class="menu-sub-box-link">Jogos
+                                            Digitais</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/banco-de-dados/" class="menu-sub-box-link">Banco
+                                            de Dados - BI & Big Data</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/gestao-da-tecnologia-da-informacao/"
+                                            class="menu-sub-box-link">Gestão da Tecnologia da Informação</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/bacharelado/administracao/" class="menu-sub-box-link">Administração
+                                            - Innovation and Digital Transformation</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/"
+                                            class="menu-sub-box-link">Análise e Desenvolvimento de Sistemas</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/bacharelado/sistemas-de-informacao/"
+                                            class="menu-sub-box-link">Sistemas de Informação - Software Engineering &
+                                            Artificial Intelligence</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/redes-de-computadores/"
+                                            class="menu-sub-box-link">Redes de Computadores - IoT, Cloud & Infra</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/graduacao/tecnologo/sistemas-para-internet/"
+                                            class="menu-sub-box-link">Sistemas para Internet</a>
+                                    </li>
+                                    <li class="menu-sub-box-item" />
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-main-item js-menu-sub-show">
+                <a href="https://www.fiap.com.br/online/" class="menu-main-link">FIAP ON</a>
+                <div class="menu-sub js-menu-sub" style="visibility: hidden; opacity: 0;">
+                    <div class="menu-sub-columns">
+                        <a href="https://www.fiap.com.br/online/" class="menu-sub-column menu-sub-header">
+                            <div class="menu-sub-column">
+                                <strong class="menu-sub-title">MBA</strong>
+                                <ul class="menu-sub-box">
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/mba/mba-em-gestao-estrategica-de-negocios/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/mba/mba-em-gestao-de-tecnologia-da-informacao/"
+                                            class="menu-sub-box-link">Gestão da Tecnologia da Informação</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-sub-column">
+                                <strong class="menu-sub-title">Graduação</strong>
+                                <ul class="menu-sub-box menu-sub-box-3">
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/producao-multimidia/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/bacharelado/sistemas-de-informacao/"
+                                            class="menu-sub-box-link">Sistemas de Informação - Software Engineering &
+                                            Artificial Intelligence</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/defesa-cibernetica/"
+                                            class="menu-sub-box-link">Defesa Cibernética</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/gestao-da-tecnologia-da-informacao/"
+                                            class="menu-sub-box-link">Gestão da Tecnologia da Informação</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/analise-e-desenvolvimento-de-sistemas/"
+                                            class="menu-sub-box-link">Análise e Desenvolvimento de Sistemas</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/jogos-digitais/"
+                                            class="menu-sub-box-link">Jogos Digitais</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/graduacao/tecnologo/marketing-digital-data-science/"
+                                            class="menu-sub-box-link">Marketing - Digital & Data Science</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-main-item js-menu-sub-show">
+                <a href="https://www.fiap.com.br/mba/" class="menu-main-link">MBA</a>
+                <div class="menu-sub js-menu-sub" style="visibility: hidden; opacity: 0;">
+                    <div class="menu-sub-columns">
+                        <a href="https://www.fiap.com.br/mba/" class="menu-sub-column menu-sub-header">
+                            <div class="menu-sub-column">
+                                <ul class="menu-sub-box menu-sub-box-4">
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/mba/mba-em-gestao-estrategica-de-negocios/"
+                                            class="menu-sub-box-link" style="padding: 12px 16px;">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/online/mba/mba-em-gestao-de-tecnologia-da-informacao/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-artificial-intelligence-e-machine-learning/"
+                                            class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-digital-business/" class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-health-tech/" class="menu-sub-box-link">
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-business-innovation-change-makers/"
+                                            class="menu-sub-box-link">Business Innovation - Change Makers</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-analise-de-negocios-business-partner/"
+                                            class="menu-sub-box-link">Análise de Negócios - Business Partner</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-arquitetura-de-solucoes/" class="menu-sub-box-link">Arquitetura
+                                            de Soluções</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-engenharia-de-dados/" class="menu-sub-box-link">Engenharia
+                                            de Dados</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-gestao-e-arquitetura-de-infraestrutura/"
+                                            class="menu-sub-box-link">Gestão e Arquitetura de Infraestrutura</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-cloud-computing" class="menu-sub-box-link">Cloud
+                                            Computing</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-big-data/" class="menu-sub-box-link">Big
+                                            Data (Data Science)</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-business-intelligence/" class="menu-sub-box-link">Business
+                                            Intelligence & Analytics</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-mobile-development/" class="menu-sub-box-link">Mobile
+                                            Development</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-full-stack-developer-soa-e-internet-of-things/"
+                                            class="menu-sub-box-link">Full Stack Developer SOA & Internet of Things</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-digital-data-marketing/" class="menu-sub-box-link">Digital
+                                            Data Marketing</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-digital-games/" class="menu-sub-box-link">Digital
+                                            Games</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-engenharia-de-software" class="menu-sub-box-link">Engenharia
+                                            de Software</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-gestao-de-tecnologia-da-informacao/"
+                                            class="menu-sub-box-link">Gestão da Tecnologia da Informação</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-gestao-de-ciberseguranca/" class="menu-sub-box-link">Gestão
+                                            de Cibersegurança</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-gestao-estrategica-de-negocios/"
+                                            class="menu-sub-box-link">Gestão Estratégica de Negócios</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-gestao-por-processos/" class="menu-sub-box-link">Gestão
+                                            por Processos</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mit-master-information-technology/" class="menu-sub-box-link">MIT
+                                            - Master in Information Technology</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-arquitetura-e-desenvolvimento-na-plataforma-net/"
+                                            class="menu-sub-box-link">Arquitetura e Desenvolvimento na Plataforma .NET</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/mba/mba-em-gestao-de-projetos-com-praticas-do-project-management-institute-pmi-e-metodologias-ageis/"
+                                            class="menu-sub-box-link">Gestão de Projetos com Práticas do Project
+                                            Management Institute, PMI® e Metodologias Ágeis</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-main-item js-menu-sub-show">
+                <a href="https://www.fiap.com.br/shift/" class="menu-main-link">SHIFT</a>
+                <div class="menu-sub js-menu-sub" style="visibility: hidden; opacity: 0;">
+                    <div class="menu-sub-columns">
+                        <a href="https://www.fiap.com.br/shift/" class="menu-sub-column menu-sub-header">
+                            <div class="menu-sub-column">
+                                <strong class="menu-sub-title">Próximos Cursos:</strong>
+                                <ul class="menu-sub-box">
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/shift/curso/inovacao/icos-a-evolucao-do-ipo-para-investimentos-com-criptomoedas"
+                                            class="menu-sub-box-link">ICOs: A evolução do IPO para investimentos com
+                                            criptomoedas</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/shift/curso/negocios/growth-hacking" class="menu-sub-box-link">Growth
+                                            Hacking: Como melhorar resultados de Marketing</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/shift/curso/negocios/excel-dashboard-design"
+                                            class="menu-sub-box-link">Excel® Dashboard Design: Comunicação visual
+                                            efetiva de dados através de painel de indicadores utilizando o Microsoft
+                                            Excel</a>
+                                    </li>
+                                    <li class="menu-sub-box-item">
+                                        <a href="https://www.fiap.com.br/shift/curso/negocios/pnl-e-o-mundo-dos-negocios-tecnicas-ferramentas-e-resultados"
+                                            class="menu-sub-box-link">PNL e o Mundo dos Negócios - Técnicas,
+                                            Ferramentas e Resultados</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-sub-column">
+                                <strong class="menu-sub-title">Encontre seu Curso por Área:</strong>
+                                <ul class="menu-sub-list">
+                                    <li class="menu-sub-list-item">
+                                        <a href="https://www.fiap.com.br/shift/categoria/tecnologia/" class="menu-sub-list-link">Tecnologia</a>
+                                    </li>
+                                    <li class="menu-sub-list-item">
+                                        <a href="https://www.fiap.com.br/shift/categoria/inovacao/" class="menu-sub-list-link">Inovação</a>
+                                    </li>
+                                    <li class="menu-sub-list-item">
+                                        <a href="https://www.fiap.com.br/shift/categoria/negocios/" class="menu-sub-list-link">Negócios</a>
+                                    </li>
+                                    <li class="menu-sub-list-item">
+                                        <a href="https://www.fiap.com.br/shift/categoria/on-line/" class="menu-sub-list-link">On-line</a>
+                                    </li>
+                                    <li class="menu-sub-list-item">
+                                        <a href="https://www.fiap.com.br/shift/categoria/workshops/" class="menu-sub-list-link">Workshops</a>
+                                    </li>
+                                    <li class="menu-sub-list-item menu-sub-list-all">
+                                        <a href="https://www.fiap.com.br/shift/" class="menu-sub-list-link">Ver todos
+                                            os cursos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu-main-item menu-main-item-dropdown js-menu-sub-show">
+                <a href="https://www.fiap.com.br/corporate/" class="menu-main-link">FIAP Corporate</a>
+                <div class="menu-sub js-menu-sub" style="visibility: hidden; opacity: 0;">
+                    <ul class="menu-sub-list">
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/corporate/" class="menu-sub-list-link">Business Innovation</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/corporate/cursos-e-treinamentos/" class="menu-sub-list-link">Cursos
+                                e Treinamentos</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/corporate/convenio-empresarial/" class="menu-sub-list-link">Convênio
+                                Empresarial</a>
+                        </li>
+                        <li class="menu-sub-list-item">
+                            <a href="https://www.fiap.com.br/corporate/contato/" class="menu-sub-list-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+<div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front">
+            <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+        </div>
+        <div class="flip-box-back">
+            <h2>Paris</h2>
+            <p>What an amazing city</p>
+        </div>
+    </div>
+</div>
+<div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front">
+            <img src="img_paris.jpg" alt="Paris" style="width:300px;height:200px">
+        </div>
+        <div class="flip-box-back">
+            <h2>Paris</h2>
+            <p>What an amazing city</p>
+        </div>
+    </div>
+</div>
+    <div class="menu-right">
+        <a href="https://www2.fiap.com.br/" target="_blank" class="menu-right-login">Login</a>
+    </div>
+</nav>
+
+    
+</body>
+</html>
+
