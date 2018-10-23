@@ -111,13 +111,42 @@
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class=""></span>Cadastro</a></li>
-                    <li><a href="#"><span class=""></span>Login</a></li>
+                    <li><a  onclick="document.getElementById('id01').style.display='block'"href="#"><span class="">Login</span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <br>
+
+    <div id="id01" class=" container modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="../img/av2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container-fluid">
+                <label for="uname"><b>Usuario</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <br>
+                <span class="psw">Esqueceu sua <a href="#"> senha?</a></span>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Lembrar
+                    
+                </label>
+            </div>
+
+            <div>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+            </div>
+        </form>
+    </div>
     <!---Espaço do Carrousel-->
     <div id="myCarousel" class=" margin-top-50 carousel slide" data-ride="carousel" margin-top-50px>
         <!-- indicadores  -->
@@ -374,5 +403,17 @@
         </div>
     </section>
 </footer>
+
 </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </html>

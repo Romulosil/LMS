@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../statics/css/bootstrap.min.css">
+    <script src="../statics/js/jquery-3.3.1.min.js"></script>
+    <script src="../statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../statics/css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cadastro</title>
+</head>
+<body class="container">
+    <h2>Cadastro de Aluno</h2>
+    <div class="margin-top-100 row">
+        <form action="/action_page.php">
+            <div class="col-md-6">
+                <img src="../img/av2.png" alt="Avatar" style="width:25%" class="avatar">
+                <br>
+                <br>
+                <input type="file" class="form-control-file ">
+                <br>
+                <div class="form-group">
+                    <label for="RG">Nome Completo:</label>
+                    <input type="text" maxlength="50"class="form-control" id="nome">
+                </div>
+                <div class="form-group">
+                    <label for="RG">RG:</label>
+                    <input type="text"maxlength="11" class="form-control" id="sobrenome">
+                </div>
+                <div class="form-group">
+                    <label for="email">C.P.F:</label>
+                    <input type="text" maxlength="11" class="form-control" id="cpf">
+                </div>
+                <div class="form-group">
+                    <label for="email">Data de Nascimento:</label>
+                    <input type="date" class="form-control" id="dt_nascimento">
+                </div>
+                <div class="form-group">
+                    <label for="email">Tel.:</label>
+                    <input type="text" class="form-control" id="tel">
+                </div>
+                 <div class="form-group">
+                    <label for="cel">Celular:</label>
+                    <input type="text" maxlength="11" class="form-control" id="cel">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email"maxlength="50" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Confirme:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Eu, aceito os termos....
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary ">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
