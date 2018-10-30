@@ -19,14 +19,13 @@
     <header class="jumbotron-new">
         <nav class="container-fluid navbar navbar-inverse navbar-fixed-top ">
             <div class="container-fluid">
-                <button type="button" class="navbar-toggle">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class=" navbar-brand" href="#"><span class="fire">FIRETEK</span> <span class="spc">- Graduação</span></a>
-                <div class="container">
-                    <div class="collapse navbar-collapse topnav">
+                    <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
                             <li class=" active dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="cursos.html"><b>Cursos</b><span
@@ -43,6 +42,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#"><span class="ins">INSCREVA-SE</span></a></li>
+                            <li><a  onclick="document.getElementById('id01').style.display='block'"href="#"><span class="">Login</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -50,6 +50,35 @@
         </nav>
         <br>
     </header>
+<div id="id01" class=" container modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <img src="../img/av2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container-fluid">
+            <label for="uname"><b>Usuario</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <br>
+            <span class="psw">Esqueceu sua <a href="#"> senha?</a></span>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Lembrar
+
+            </label>
+        </div>
+
+        <div>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+        </div>
+    </form>
+</div>
 
     <section class="margin-top-25">
         <div class=" fig  _title text-center section_title ">

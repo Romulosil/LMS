@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../statics/css/bootstrap.min.css">
+    <script src="../statics/js/jquery-3.3.1.min.js"></script>
+    <script src="../statics/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../statics/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>cadastro</title>
+</head>
+<body>
+<section id="aluno" class="a-login">
+    <div class="a-login-background a-login-background-6"></div>
+
+    <div class="a-login-wrapper">
+        <form action="/Aluno/LogOn" method="post" class="a-login-form">
+            <input type="hidden" name="urlRedirecionamento" />
+
+            <h1 class="a-login-title">
+                Portal do <span class="a-login-title-highlight">Aluno</span>
+            </h1>
+
+
+            <div class="a-login-columns">
+                <div class="a-login-column">
+                    <label for="usuario" class="a-login-label">
+                        RA
+                    </label>
+
+                    <input id="usuario" name="usuario" type="text" class="a-login-input" value="">
+                </div>
+
+                <div class="a-login-column">
+                    <label for="senha" class="a-login-label">
+                        Senha
+                    </label>
+
+                    <input id="senha" name="senha" type="password" class="a-login-input">
+                </div>
+            </div>
+
+            <div class="a-login-footer">
+                <input type="submit" class="a-login-btn" value="Conectar">
+
+                <a href="/Aluno/EsqueciSenha" target="_blank" class="a-login-link">
+                    Esqueceu a senha?
+                </a>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="a-login-copyright">
+     
+    </div>
+</section>
+    
+</body>
+</html>
